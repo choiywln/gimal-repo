@@ -59,25 +59,25 @@
             <h3>
                 수량
                 <button type ="button" id="timesClicked" class="button">0</button>
-{#                <script>#}
-{#                    let current = 0;#}
-{#                    viewer.innerHTML = "" + current;#}
-{#                    let operator = null;#}
-{#                    runPlus = function () {#}
-{#                        if (operator == 'plus') {#}
-{#                            current += parseInt(operand.value);#}
-{#                            viewer.innerHTML = "" + current;#}
-{#                        } else if (operator == 'minus') {#}
-{#                            current -= parseInt(operand.value);#}
-{#                            viewer.innerHTML = "" + current;#}
-{#                        } else if (operator == null) {#}
-{#                            current = parseInt(operand.value)#}
-{#                        }#}
-{#                        operator = 'plus';#}
-{#                    }#}
-{#                    plus.addEventListener("click", runPlus)#}
-{#                </script>#}
-                <button id="plus" class="button">0</button>
+                <script>
+                    let current = 0;
+                    viewer.innerHTML = "" + current;
+                    let operator = null;
+                    runPlus = function leftClick(event) {
+                        operator = 'plus';
+                    }
+                    plus.addEventListener("click", runPlus)
+                </script>
+                <button type ="button" id="timesClicked" class="button">0</button>
+                <script>
+                    let current = 0;
+                    viewer.innerHTML = "" - current;
+                    let operator = null;
+                    runMinus = function leftClick(event) {
+                        operator = 'minus';
+                    }
+                    minus.addEventListener("click", runMinus)
+                </script>
                 <input type="text" class="textbox" style="width: 63px"/>
                 <input type="text" class="textbox" style="width: 63px"/>
             </h3>

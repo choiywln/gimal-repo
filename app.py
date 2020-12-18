@@ -12,12 +12,12 @@ def main():
         return render_template('main.html')
 
 
-@app.route('/purchase')
+@app.route('/purchase', methods=["POST", "GET"])
 def purchase():
     return render_template('purchase.html')
 
 
-@app.route('/check')
+@app.route('/check', methods=["POST", "GET"])
 def check():
     return render_template('check.html')
 
