@@ -2,28 +2,41 @@
 
 {% block content %}
 
+    <style>
+        .final {
+            width: 450px;
+            height: 200px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 3px;
+            margin: auto auto auto auto;
+            text-indent: 35px;
+            text-align: left;
+        }
+    </style>
+
     <body>
     <div class="all">
         <h3 style="margin-left: 260px">구매 정보 </h3>
-        <table style="width:500px; margin-left: 120px; text-align: left">
+        <table class="final">
             <tr>
                 <th style="font-weight: normal">이름</th>
                 <td>최예원</td>
             </tr>
             <tr>
-                <th style="font-weight: normal; padding-top: 7px">학번</th>
+                <th style="font-weight: normal">학번</th>
                 <td>2019106129</td>
             </tr>
             <tr>
-                <th style="font-weight: normal; padding-top: 7px">Github 주소</th>
+                <th style="font-weight: normal">Github 주소</th>
                 <td>https://github.com/choiywln/gimal-repo</td>
             </tr>
             <tr>
-                <th style="font-weight: normal; padding-top: 7px">총액</th>
+                <th style="font-weight: normal">총액</th>
                 <td>18000</td>
             </tr>
             <tr>
-                <th style="font-weight: normal; padding-top: 7px">구매방법</th>
+                <th style="font-weight: normal">구매방법</th>
                 <td>카드결제</td>
             </tr>
         </table>

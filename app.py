@@ -3,9 +3,13 @@ from flask import Flask, render_template, redirect, session, url_for, request
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=["POST", "GET"])
 def main():
-    return render_template('main.html')
+    if request.method == "POST":
+        user = request.form["nm"]
+        return redirect(url_for("purchase", purchase=user))
+    else:
+        return render_template('main.html')
 
 
 @app.route('/purchase')

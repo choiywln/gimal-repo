@@ -4,43 +4,71 @@
 
     <style>
         .circles {
-            margin: 7px 10px 10px 250px;
+            margin: 7px 10px 10px 30px;
         }
 
         .buttons {
             padding-inline: 28px
             margin-top: 20px;
         }
+
+        .tables {
+            width: 170px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 20px;
+            margin-left: 200px;
+        }
+
+        .square {
+            width: 200px;
+            height: 150px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 30px;
+            margin-left: 205px;
+            text-indent: 20px;
+        }
+
+        .info {
+            width: 170px;
+            height: 40px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 30px;
+            margin-left: 190px;
+        }
     </style>
     </head>
     <body>
     <div class="all">
         <h3 style="margin-left: 260px">구매 가격 </h3>
-        <table style="width:150px; margin-left: 240px; text-align: left">
-            <tr>
-                <th style="font-weight: normal;">사과</th>
-                <td>6000</td>
-            </tr>
-            <tr>
-                <th style="font-weight: normal">오렌지</th>
-                <td>3000</td>
-            </tr>
-            <tr>
-                <th style="font-weight: normal">바나나</th>
-                <td>0</td>
-            </tr>
-            <tr>
-                <th style="font-weight: normal">수박</th>
-                <td>9000</td>
-            </tr>
-            <tr>
-                <th>총액</th>
-                <td style="font-weight: bold">18000</td>
-            </tr>
-        </table>
-
+        <div>
+            <table class="square">
+                <tr>
+                    <th style="font-weight: normal">사과</th>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <th style="font-weight: normal">오렌지</th>
+                    <td>3000</td>
+                </tr>
+                <tr>
+                    <th style="font-weight: normal">바나나</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th style="font-weight: normal">수박</th>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <th>총액</th>
+                    <td style="font-weight: bold">18000</td>
+                </tr>
+            </table>
+        </div>
         <h3 style="margin-left: 262px">구매 방법</h3>
-        <form>
+        <form class="tables">
             <input type="radio" id="male" name="gender" value="male" class="circles">
             <label for="male">카드결제</label><br>
             <input type="radio" id="female" name="gender" value="female" class="circles">
@@ -52,10 +80,10 @@
         </form>
 
         <h3 style="margin-left: 255px">구매자 정보</h3>
-        <span style="margin-right: 15px; margin-left: 220px">이름</span><input type="text" class="textbox"
-                                                                             style="width: 100px"/><br>
-        <span style="margin-right: 15px; margin-left: 220px">학번</span><input type="text" class="textbox"
-                                                                             style="width: 100px; margin-top: 7px"/>
+        <div class="info">
+            <span style="margin-right: 15px">이름</span><input type="text" style="width: 100px"/><br>
+            <span style="margin-right: 15px; text-indent: 20px">학번</span><input type="text" style="width: 100px; margin-top: 7px"/>
+        </div>
 
         <div class="buttons">
             <button style="padding-inline: 28px; margin-top: 35px; margin-left: 215px">이전</button>
