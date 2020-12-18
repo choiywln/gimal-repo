@@ -1,5 +1,75 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yewon's Shop</title>
+    <style>
+        .all {
+            width: 600px;
+            margin: auto auto auto auto;
+        }
 
-{% block content %}
+        .circles {
+            margin: 7px 10px 10px 250px;
+        }
 
-{% endblock %}
+        .buttons {
+            padding-inline: 28px
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <h1 style="padding-left: 200px; padding-top: 10px">Yewon's Shop</h1>
+    <h3 style="margin-left: 260px">구매 가격 </h3>
+    <table style="width:150px; margin-left: 240px; text-align: left">
+        <tr>
+            <th style="font-weight: normal;">사과</th>
+            <td>6000</td>
+        </tr>
+        <tr>
+            <th style="font-weight: normal">오렌지</th>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <th style="font-weight: normal">바나나</th>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th style="font-weight: normal">수박</th>
+            <td>9000</td>
+        </tr>
+        <tr>
+            <th>총액</th>
+            <td style="font-weight: bold">18000</td>
+        </tr>
+    </table>
+
+    <h3 style="margin-left: 262px">구매 방법</h3>
+    <form>
+        <input type="radio" id="male" name="gender" value="male" class="circles">
+        <label for="male">카드결제</label><br>
+        <input type="radio" id="female" name="gender" value="female" class="circles">
+        <label for="female">계좌이체</label><br>
+        <input type="radio" id="other" name="gender" value="other" class="circles">
+        <label for="other">휴대폰결제</label><br>
+        <input type="radio" id="other" name="gender" value="other" class="circles">
+        <label for="other">무통장입금</label>
+    </form>
+
+    <h3 style="margin-left: 255px">구매자 정보</h3>
+    <span style="margin-right: 15px; margin-left: 220px">이름</span><input type="text" class="textbox"
+                                                                         style="width: 100px"/><br>
+    <span style="margin-right: 15px; margin-left: 220px">학번</span><input type="text" class="textbox"
+                                                                         style="width: 100px; margin-top: 7px"/>
+
+    <div class="buttons">
+        <button style="padding-inline: 28px; margin-top: 35px; margin-left: 215px">이전</button>
+        <button style="padding-inline: 28px">결제</button>
+    </div>
+</div>
+
+
+</body>
+</html>
