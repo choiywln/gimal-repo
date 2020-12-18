@@ -1,45 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Yewon's Shop</title>
-    <style>
-        .all {
-            width: 600px;
-            margin: auto auto auto auto;
-        }
-    </style>
-</head>
-<body>
-<div class="all">
-    <h1 style="padding-left: 200px; padding-top: 10px">Yewon's Shop</h1>
-    <h3 style="margin-left: 260px">구매 정보 </h3>
-    <table style="width:500px; margin-left: 120px; text-align: left">
-        <tr>
-            <th style="font-weight: normal">이름</th>
-            <td>최예원</td>
-        </tr>
-        <tr>
-            <th style="font-weight: normal; padding-top: 7px">학번</th>
-            <td>2019106129</td>
-        </tr>
-        <tr>
-            <th style="font-weight: normal; padding-top: 7px">Github 주소</th>
-            <td>https://github.com/choiywln/gimal-repo</td>
-        </tr>
-        <tr>
-            <th style="font-weight: normal; padding-top: 7px">총액</th>
-            <td>18000</td>
-        </tr>
-        <tr>
-            <th style="font-weight: normal; padding-top: 7px">구매방법</th>
-            <td>카드결제</td>
-        </tr>
-    </table>
+{% extends "base.html" %}
 
-    <div class="buttons">
-        <button style="padding-inline: 28px; margin-top: 30px; margin-left: 215px">이전</button>
-        <button style="padding-inline: 28px">결제</button>
-    </div>
-</body>
-</html>
+{% block content %}
+
+    <body>
+    <div class="all">
+        <h3 style="margin-left: 260px">구매 정보 </h3>
+        <table style="width:500px; margin-left: 120px; text-align: left">
+            <tr>
+                <th style="font-weight: normal">이름</th>
+                <td>최예원</td>
+            </tr>
+            <tr>
+                <th style="font-weight: normal; padding-top: 7px">학번</th>
+                <td>2019106129</td>
+            </tr>
+            <tr>
+                <th style="font-weight: normal; padding-top: 7px">Github 주소</th>
+                <td>https://github.com/choiywln/gimal-repo</td>
+            </tr>
+            <tr>
+                <th style="font-weight: normal; padding-top: 7px">총액</th>
+                <td>18000</td>
+            </tr>
+            <tr>
+                <th style="font-weight: normal; padding-top: 7px">구매방법</th>
+                <td>카드결제</td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button style="padding-inline: 28px; margin-top: 30px; margin-left: 215px">이전</button>
+            <button style="padding-inline: 28px">결제</button>
+        </div>
+
+{% endblock %}
